@@ -1,38 +1,78 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+body {
+  background-color: #f9f9f9;
+}
+
+h1 {
   text-align: center;
+  font-family: "JetBrains Mono", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  font-family: "JetBrains Mono", sans-serif;
+  width: 70%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
+  padding: 20px 20px;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+form textarea {
+  resize: none;
+  border-color: #cecece;
+  border-radius: 5px 5px 0 0;
+  border-bottom: none;
+}
+
+form button {
+  font-family: inherit;
+  font-size: 28px;
+  font-weight: 500;
+  background-color: #2c87c5;
   color: white;
+  width: 100%;
+  margin-top: 0px;
+  border: none;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.container .result-display {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result-item {
+  align-self: center;
+  margin-bottom: 4px;
+}
+
+.result-item .input-result {
+  font-size: 20px;
+  border-radius: 5px 0 0 5px;
+}
+
+.result-item .input-result {
+  width: 400px;
+  font-size: 20px;
+  border-radius: 5px 0 0 5px;
+}
+
+.result-item button {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 0px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #2c87c5;
+  color: white;
 }
