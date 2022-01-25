@@ -33,7 +33,7 @@ export default function App() {
           final = `${element} ${final}`;
           break;
         } else {
-          final = `> ${element}`;
+          final = `> ${element} ${final}`;
         }
       }
       setResult(final);
