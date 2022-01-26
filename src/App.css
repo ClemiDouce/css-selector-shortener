@@ -10,27 +10,30 @@ h1 {
 }
 
 .container {
+  background-color: #ffffff;
   font-family: "JetBrains Mono", sans-serif;
   width: 70%;
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-form {
+form,
+.result-container {
   padding: 20px 20px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
 }
 
-form textarea {
+#selector-input,
+.output-result {
   resize: none;
   border-color: #cecece;
   border-radius: 5px 5px 0 0;
   border-bottom: none;
 }
 
-form button {
+button {
   font-family: inherit;
   font-size: 28px;
   font-weight: 500;
@@ -42,37 +45,4 @@ form button {
   border-radius: 5px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-}
-
-.container .result-display {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 10px;
-}
-
-.result-item {
-  align-self: center;
-  margin-bottom: 4px;
-}
-
-.result-item .input-result {
-  font-size: 20px;
-  border-radius: 5px 0 0 5px;
-}
-
-.result-item .input-result {
-  width: 400px;
-  font-size: 20px;
-  border-radius: 5px 0 0 5px;
-}
-
-.result-item button {
-  font-family: inherit;
-  font-size: 20px;
-  font-weight: 500;
-  margin-top: 0px;
-  border: none;
-  border-radius: 0 5px 5px 0;
-  background-color: #2c87c5;
-  color: white;
 }
